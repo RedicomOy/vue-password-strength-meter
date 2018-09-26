@@ -1,16 +1,16 @@
 {
-  "name": "vue-password-strength-meter",
+  "name": "@redicom/vue-password-strength-meter",
   "version": "1.3.2",
   "description": "Interactive password strength meter based on zxcvbn",
-  "author": "Jakub Juszczak <jakub@posteo.de>",
+  "author": "Kalle Pyörälä <kalle.pyorala@redicom.fi>",
   "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:apertureless/vue-password-strength-meter.git"
+    "url": "git+ssh://git@github.com:RedicomOy/vue-password-strength-meter.git"
   },
   "bugs": {
-    "url": "https://github.com/apertureless/vue-password-strength-meter/issues"
+    "url": "https://github.com/RedicomOy/vue-password-strength-meter/issues"
   },
   "keywords": [
     "vue.js",
@@ -25,10 +25,10 @@
     "play": "vue-play start",
     "play:build": "vue-play build",
     "dev": "node build/dev-server.js",
-    "build": "npm run release",
+    "build": "yarn run release",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
-    "prepublish": "npm run lint && npm run build",
+    "prepublish": "yarn run lint && yarn run build",
     "release": "webpack --progress --hide-modules --config  ./build/webpack.release.js && NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js"
   },
   "files": [
